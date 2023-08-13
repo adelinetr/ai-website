@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Writer Generator</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div class="hero-img"><img class="hero-img" src="images/main.svg" alt=""></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo"><svg width="65" height="65" viewBox="0 0 57 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_51_3)">
+                <path d="M27.8102 29.4148H35.3014L21.7767 0L0 47.37H8.46887L13.545 35.8317H23.677V29.4206H15.7258L21.7767 15.1922L27.8102 29.4148Z" fill="#5F94C0"/>
+                <path d="M33.6845 35.8317H29.9736L35.0873 47.3699H43.5562L38.2516 35.8317H33.6845Z" fill="#5F94C0"/>
+                <path d="M56.2914 2.50098H48.7134V47.37H56.2914V2.50098Z" fill="#5F94C0"/>
+                <path d="M27.8102 29.4148H23.677V29.4206H27.8131L27.8102 29.4148Z" fill="white"/>
+                <path d="M8.63085 53.6792H9.79937L7.36399 60L5.52444 55.7551L3.68489 60L1.24951 53.6792H2.41803L3.8324 57.7028L5.52733 53.3793L7.23962 57.7028L8.63663 53.6792H8.63085Z" fill="#5F94C0"/>
+                <path d="M16.6485 53.6792V59.6826H15.642V53.6792H16.6485ZM16.2407 53.6792H17.4844C17.9154 53.6792 18.2914 53.7578 18.6124 53.9121C18.9335 54.0664 19.1822 54.2818 19.3587 54.5584C19.5351 54.835 19.6219 55.164 19.6219 55.5396C19.6219 55.9152 19.5351 56.2471 19.3587 56.5266C19.1822 56.8061 18.9335 57.0245 18.6124 57.1788C18.2914 57.3331 17.9154 57.4117 17.4844 57.4117H16.2407V56.579H17.441C17.6695 56.579 17.8691 56.5382 18.0426 56.4596C18.2162 56.381 18.3492 56.2646 18.4476 56.1132C18.5459 55.9618 18.5922 55.7813 18.5922 55.5687C18.5922 55.3562 18.543 55.1698 18.4476 55.0214C18.3521 54.8729 18.2162 54.7593 18.0426 54.6778C17.8691 54.5992 17.6695 54.5584 17.441 54.5584H16.2407V53.6792ZM17.9617 56.8177L19.9805 59.6826H18.7715L16.8712 56.8177H17.9617Z" fill="#5F94C0"/>
+                <path d="M26.8383 53.6792V59.6826H25.8231V53.6792H26.8383Z" fill="#5F94C0"/>
+                <path d="M32.6838 53.6792H36.8401V54.6137H35.2638V59.6826H34.2486V54.6137H32.6809V53.6792H32.6838Z" fill="#5F94C0"/>
+                <path d="M43.6749 53.6792V59.6826H42.6857V53.6792H43.6749ZM43.3075 53.6792H46.3156V54.5701H43.3075V53.6792ZM43.3075 56.0287H46.1449V56.9022H43.3075V56.0287ZM43.3075 58.7917H46.3156V59.6826H43.3075V58.7917Z" fill="#5F94C0"/>
+                <path d="M53.668 53.6792V59.6826H52.6614V53.6792H53.668ZM53.2602 53.6792H54.5039C54.9348 53.6792 55.3108 53.7578 55.6319 53.9121C55.953 54.0664 56.2017 54.2818 56.3781 54.5584C56.5546 54.835 56.6413 55.164 56.6413 55.5396C56.6413 55.9152 56.5546 56.2471 56.3781 56.5266C56.2017 56.8061 55.953 57.0245 55.6319 57.1788C55.3108 57.3331 54.9348 57.4117 54.5039 57.4117H53.2602V56.579H54.4605C54.689 56.579 54.8886 56.5382 55.0621 56.4596C55.2356 56.381 55.3716 56.2646 55.467 56.1132C55.5625 55.9618 55.6117 55.7813 55.6117 55.5687C55.6117 55.3562 55.5625 55.1698 55.467 55.0214C55.3716 54.8729 55.2356 54.7593 55.0621 54.6778C54.8886 54.5992 54.689 54.5584 54.4605 54.5584H53.2602V53.6792ZM54.9811 56.8177L57 59.6826H55.791L53.8907 56.8177H54.9811Z" fill="#5F94C0"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_51_3">
+                <rect width="57" height="60" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+                </a>
+
+
+            <nav>
+
+                <svg class="close" width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M193.675 60.4309C192.696 59.4498 191.533 58.6714 190.253 58.1403C188.972 57.6092 187.6 57.3358 186.214 57.3358C184.828 57.3358 183.455 57.6092 182.175 58.1403C180.895 58.6714 179.732 59.4498 178.752 60.4309L127 112.078L75.2474 60.325C74.2676 59.3452 73.1044 58.568 71.8242 58.0377C70.544 57.5074 69.1719 57.2345 67.7862 57.2345C66.4005 57.2345 65.0284 57.5074 63.7482 58.0377C62.468 58.568 61.3047 59.3452 60.3249 60.325C59.3451 61.3049 58.5679 62.4681 58.0376 63.7483C57.5073 65.0285 57.2344 66.4006 57.2344 67.7863C57.2344 69.172 57.5073 70.5441 58.0376 71.8243C58.5679 73.1045 59.3451 74.2677 60.3249 75.2475L112.077 127L60.3249 178.753C59.3451 179.732 58.5679 180.896 58.0376 182.176C57.5073 183.456 57.2344 184.828 57.2344 186.214C57.2344 187.599 57.5073 188.972 58.0376 190.252C58.5679 191.532 59.3451 192.695 60.3249 193.675C61.3047 194.655 62.468 195.432 63.7482 195.962C65.0284 196.493 66.4005 196.766 67.7862 196.766C69.1719 196.766 70.544 196.493 71.8242 195.962C73.1044 195.432 74.2676 194.655 75.2474 193.675L127 141.923L178.752 193.675C179.732 194.655 180.895 195.432 182.176 195.962C183.456 196.493 184.828 196.766 186.214 196.766C187.599 196.766 188.971 196.493 190.252 195.962C191.532 195.432 192.695 194.655 193.675 193.675C194.655 192.695 195.432 191.532 195.962 190.252C196.493 188.972 196.765 187.599 196.765 186.214C196.765 184.828 196.493 183.456 195.962 182.176C195.432 180.896 194.655 179.732 193.675 178.753L141.922 127L193.675 75.2475C197.697 71.2259 197.697 64.4525 193.675 60.4309Z" fill="black"/>
+                </svg>
+
+                <ul>
+                    <li><a class="link active" href="#">home</a></li>
+                    <li><a class="link" href="#first-section">about</a></li>
+                    <li><a class="link" href="#prices">prices</a></li>
+                </ul>
+            </nav>
+            <svg class="menu" width="75" height="75" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 40.5C8.3625 40.5 7.8285 40.284 7.398 39.852C6.966 39.4215 6.75 38.8875 6.75 38.25C6.75 37.6125 6.966 37.0785 7.398 36.648C7.8285 36.216 8.3625 36 9 36H45C45.6375 36 46.1715 36.216 46.602 36.648C47.034 37.0785 47.25 37.6125 47.25 38.25C47.25 38.8875 47.034 39.4215 46.602 39.852C46.1715 40.284 45.6375 40.5 45 40.5H9ZM9 29.25C8.3625 29.25 7.8285 29.034 7.398 28.602C6.966 28.1715 6.75 27.6375 6.75 27C6.75 26.3625 6.966 25.8277 7.398 25.3957C7.8285 24.9652 8.3625 24.75 9 24.75H45C45.6375 24.75 46.1715 24.9652 46.602 25.3957C47.034 25.8277 47.25 26.3625 47.25 27C47.25 27.6375 47.034 28.1715 46.602 28.602C46.1715 29.034 45.6375 29.25 45 29.25H9ZM9 18C8.3625 18 7.8285 17.7847 7.398 17.3542C6.966 16.9222 6.75 16.3875 6.75 15.75C6.75 15.1125 6.966 14.5778 7.398 14.1458C7.8285 13.7153 8.3625 13.5 9 13.5H45C45.6375 13.5 46.1715 13.7153 46.602 14.1458C47.034 14.5778 47.25 15.1125 47.25 15.75C47.25 16.3875 47.034 16.9222 46.602 17.3542C46.1715 17.7847 45.6375 18 45 18H9Z" fill="#5F94C0"/>
+                </svg>
+                
+        </header>
+
+        <section class="hero">
+            <h1>Generate accurate text with AI in a few minutes</h1>
+            <p class="subhead">AI-Writer is the most accurate content generation platform, using state-of-the-art 
+                AI writing models to <span>generate articles from just a headline.</span></p>
+            
+            <div class="down-arrow">
+                <a href="#first-section" onclick="scrollFunction1()"><p id="main-b" class="howWorks-button">See How It Works</p></a>
+            <a href="#first-section"><svg class="arrow" width="8" height="23" viewBox="0 0 8 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.64645 22.3536C3.84171 22.5488 4.15829 22.5488 4.35355 22.3536L7.53553 19.1716C7.7308 18.9763 7.7308 18.6597 7.53553 18.4645C7.34027 18.2692 7.02369 18.2692 6.82843 18.4645L4 21.2929L1.17157 18.4645C0.976312 18.2692 0.659729 18.2692 0.464467 18.4645C0.269205 18.6597 0.269205 18.9763 0.464467 19.1716L3.64645 22.3536ZM3.5 2.18557e-08L3.5 22L4.5 22L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#455A64"/>
+                </svg></a>
+            </div> 
+        </section>
+
+        <!--Second Section-->
+
+        <section id="first-section" data-aos="zoom-out-right" data-aos-duration="2000" class="info-one">
+            <div class="feature left">
+                <div class="content">
+                <h2 class="second-h2">Text Generation Made Easy</h2>
+                    <p class="list"> <span class="number">●  </span> Full-length article drafts gives you a solid base for writing.
+                        <br><br>
+                        <span class="number">● </span>List of citations so that you can verify the information and deliver accurate and quality content.
+                        <br><br>
+                        <span class="number">● </span>The AI-generated text is always fresh and relevant.
+                        <br><br>
+                        <span class="number">● </span>The AI-generated text is guaranteed to be unique and original.
+                        <br><br>
+                        <span class="number">● </span>The AI-generated text is SEO-friendly and authoritative.
+                        <br><br>
+                        <span class="number">● </span>The AI-generated text can be directly published to Wordpress.
+                    </p>
+                </div>
+            </div>
+            <div class="feature right">
+                <img class="icon-scnd" src="images/icon01.svg" alt="Icon">
+            </div>
+        </section>
+
+        <!--Third Section-->
+
+        <section data-aos="zoom-out-right" data-aos-duration="2000" class="info-two">
+            <div class="feature right">
+                <h2 class="howTo">How can it help you?</h2>
+                <div class="content-second">
+
+                    <p class="helpOfAI"> An AI writing assistant is software that automates one or more phases in the process 
+                        of generating content for marketing purposes. 
+                        <br><br>
+                        AI writing assistants can help with ideation, structure and even tone and style, giving marketers
+                        more time to focus on their unique skills and to brainstorm new ideas.
+                    </p>
+
+                    <p class="helpOfAI2">    
+                        An AI text generator is a type of software that uses artificial
+                        intelligence to produce written copy. 
+                        <br><br>
+                        This can be useful in a variety of applications,
+                        such as creating content for websites or social media, generating reports or 
+                        articles, and even writing creative works such as stories or poems
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature left-chat">
+              <img class="AI-photo" src="images/ai-photo.jpeg" alt="Chat Icon">
+            </div>
+        </section>
+
+        <!--Fourth Section-->
+
+        <section id="prices" data-aos="zoom-out-right" class="choosePlan">
+            <div class="feature">
+                <div class="content">
+                    <h2>Choose Your Plan</h2>
+                    <p class="save">Save up to 50% of your time when you generate content with AI Writer against starting from scratch.</p>
+                </div>
+            </div>
+        <div class="two-col">
+            <div data-aos="flip-left" data-aos-duration="2000" class="feature-1 left">
+                <div class="content basic">
+                   <h3>Basic Plan</h3>
+                    <div class="box">
+                        <p class="price"><span>19€</span><br>per month</p>
+                        <p class="plan-1">Up to 40 articles
+                            <br><br>
+                            1 user
+                            <br><br>
+                            AI Text Generator
+                            <br><br>
+                            Text Rewording
+                            <br><br>
+                            Source Summarizer
+                            <br><br>
+                            SEO Editor
+                            </p>
+                    </div>
+                    <br><br>
+                    <a href="#"><span class="try">Try Basic</span></a>
+                </div>
+            </div>
+
+            <div data-aos="flip-left" data-aos-duration="3000" class="feature-1 left">
+                <div class="content premium">
+                    <h3>Premium Plan</h3>
+                    <div class="box">
+                        <p class="price"><span>49€</span><br>per month</p>
+                        <p class="plan-2">Up to 170 articles
+                            <br><br>
+                            1 user
+                            <br><br>
+                            AI Text Generator
+                            <br><br>
+                            Text Rewording
+                            <br><br>
+                            Source Summarizer
+                            <br><br>
+                            SEO Editor
+                        </p>
+                    </div>
+                    <br><br>
+                    <a href="#"><span class="try-p">Try Premium</span></a>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+        <!--Fifth Section-->
+        <div data-aos="zoom-out-right" data-aos-duration="2000" class="wrapper-two">
+            <section class="last">
+    
+                <p class="heading">The only thing you need is to structure your request correctly.</p>
+                <p class="p-last">Artificial Intelligence becomes more and more popular these days. 
+                    <br><br>
+                    AI <span>achieves incredible accuracy</span> through deep neural networks, so why not use the 
+                    opportunity to use an incredibly accurate data in our projects.</p>
+            </section>
+                <div class="last-icon">
+                    <img class="icon-3" src="images/icon-1.svg" alt="">
+                </div>
+            </div>
+    </div>
+
+    <script>
+
+  AOS.init();
+
+        const menu = document.querySelector('.menu')
+    const close = document.querySelector('.close')
+    const nav = document.querySelector('nav')
+
+    menu.addEventListener('click', () => {
+        nav.classList.add('open-nav')
+    })
+
+    close.addEventListener('click', () => {
+        nav.classList.remove('open-nav')
+    })
+
+    </script>
+    
+</body>
+        <div class="footer">
+        <footer>
+                <div class="footer-p" >
+                    <div class="img-footer"><img class="left-footer" src="images/logo-main.svg" alt=""></div>
+                    <p class="last-p">AI-Writer is the most accurate article generator that uses state-of-the-art AI writing models to generate content from just a headline.</p>
+                </div>
+
+                <div class="newsletter">
+                      <label form="" class="form-label">Join Our Newsletter</label>
+                      <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Enter your email">
+                      <button class="sign-up">SIGN UP</button>
+                </div>
+
+                    <div class="social-icons">
+                        
+                        <a href="#"><svg class="social" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26 13.0326C26 5.8386 20.176 0 13 0C5.824 0 0 5.8386 0 13.0326C0 19.3403 4.472 24.5925 10.4 25.8045V16.9424H7.8V13.0326H10.4V9.77444C10.4 7.25915 12.441 5.21303 14.95 5.21303H18.2V9.12281H15.6C14.885 9.12281 14.3 9.70927 14.3 10.4261V13.0326H18.2V16.9424H14.3V26C20.865 25.3484 26 19.7965 26 13.0326Z" fill="#CACACA"/>
+                        </svg></a>
+
+                        <a href="#"><svg class="social" width="26" height="26" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.86 10.5C13.86 11.1645 13.6629 11.8142 13.2937 12.3667C12.9245 12.9193 12.3998 13.3499 11.7858 13.6042C11.1719 13.8585 10.4963 13.9251 9.8445 13.7954C9.19272 13.6658 8.59403 13.3458 8.12412 12.8759C7.65422 12.406 7.33421 11.8073 7.20456 11.1555C7.07491 10.5037 7.14145 9.82814 7.39576 9.21418C7.65007 8.60022 8.08073 8.07546 8.63328 7.70626C9.18583 7.33706 9.83545 7.14 10.5 7.14C11.3903 7.14277 12.2433 7.49766 12.8728 8.12718C13.5023 8.7567 13.8572 9.60972 13.86 10.5ZM21 5.88V15.12C21 16.6795 20.3805 18.1751 19.2778 19.2778C18.1751 20.3805 16.6795 21 15.12 21H5.88C4.32053 21 2.82493 20.3805 1.72221 19.2778C0.619498 18.1751 0 16.6795 0 15.12V5.88C0 4.32053 0.619498 2.82493 1.72221 1.72221C2.82493 0.619498 4.32053 0 5.88 0H15.12C16.6795 0 18.1751 0.619498 19.2778 1.72221C20.3805 2.82493 21 4.32053 21 5.88ZM15.54 10.5C15.54 9.50318 15.2444 8.52875 14.6906 7.69993C14.1368 6.8711 13.3497 6.22511 12.4287 5.84365C11.5078 5.46218 10.4944 5.36237 9.51674 5.55684C8.53908 5.75131 7.64104 6.23133 6.93618 6.93618C6.23133 7.64104 5.75131 8.53908 5.55684 9.51674C5.36237 10.4944 5.46218 11.5078 5.84365 12.4287C6.22511 13.3497 6.8711 14.1368 7.69993 14.6906C8.52875 15.2444 9.50318 15.54 10.5 15.54C11.8367 15.54 13.1186 15.009 14.0638 14.0638C15.009 13.1186 15.54 11.8367 15.54 10.5ZM17.22 5.04C17.22 4.7908 17.1461 4.54719 17.0077 4.33998C16.8692 4.13278 16.6724 3.97128 16.4422 3.87591C16.2119 3.78055 15.9586 3.75559 15.7142 3.80421C15.4698 3.85283 15.2453 3.97283 15.069 4.14905C14.8928 4.32526 14.7728 4.54977 14.7242 4.79419C14.6756 5.0386 14.7005 5.29195 14.7959 5.52218C14.8913 5.75242 15.0528 5.9492 15.26 6.08765C15.4672 6.2261 15.7108 6.3 15.96 6.3C16.2942 6.3 16.6147 6.16725 16.851 5.93095C17.0872 5.69466 17.22 5.37417 17.22 5.04Z" fill="#CACACA"/>
+                            </svg>
+                            </a>
+                            
+                        <a href="#"><svg class="social" width="26" height="26" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.92 2C20.15 2.35 19.32 2.58 18.46 2.69C19.34 2.16 20.02 1.32 20.34 0.31C19.51 0.81 18.59 1.16 17.62 1.36C16.83 0.5 15.72 0 14.46 0C12.11 0 10.19 1.92 10.19 4.29C10.19 4.63 10.23 4.96 10.3 5.27C6.74 5.09 3.57 3.38 1.46 0.79C1.09 1.42 0.88 2.16 0.88 2.94C0.88 4.43 1.63 5.75 2.79 6.5C2.08 6.5 1.42 6.3 0.84 6V6.03C0.84 8.11 2.32 9.85 4.28 10.24C3.65073 10.4122 2.9901 10.4362 2.35 10.31C2.62161 11.1625 3.15354 11.9084 3.87102 12.4429C4.5885 12.9775 5.45545 13.2737 6.35 13.29C4.83363 14.4904 2.954 15.1393 1.02 15.13C0.68 15.13 0.34 15.11 0 15.07C1.9 16.29 4.16 17 6.58 17C14.46 17 18.79 10.46 18.79 4.79C18.79 4.6 18.79 4.42 18.78 4.23C19.62 3.63 20.34 2.87 20.92 2Z" fill="#CACACA"/>
+                            </svg>
+                            </a>
+
+                    </div>
+
+                    <div class="center"><p>© AI Writer 2023</p></div>
+        </footer>
+    </div>
+    
+</html>
